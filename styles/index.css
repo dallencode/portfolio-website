@@ -1,25 +1,31 @@
 h1 {
-  font-family: "Exo";
+  /* margin-top: 8vh; */
+  font-family: "Exo", sans-serif;
   font-size: 15vh;
+}
+
+h2 {
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .greeting {
   display: flex;
   flex-flow: column wrap;
-  padding: 1rem;
-  margin-top: 2rem;
+  padding: 1.3rem;
+  margin-top: 5rem;
   color: var(--font-color);
 }
 
 .standout {
-  animation: glow 2s ease-in-out infinite alternate;
+  text-transform: uppercase;
+  animation: glow 2s ease-in infinite alternate;
 }
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 20px #2d9da9;
+    text-shadow: 0 0 10px #2d9da9;
   }
   to {
-    text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
+    text-shadow: 0 0 300px #3468c1, 0 0 10px #4dbbc7;
   }
 }
