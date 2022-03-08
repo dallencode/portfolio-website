@@ -1,7 +1,12 @@
 :root {
   --primary-color: #f6fafb;
-  --secondary-color: blue;
+  --secondary-color: #5e6668;
   --font-color: #343838;
+  --font-heading: "Suez One", sans-serif;
+  --font-subheading: "Bebas Neue", sans-serif;
+  --font-paragraph: "Open Sans", sans-serif;
+  --bg-color: #c1c8c7;
+ 
 }
 
 * {
@@ -19,13 +24,31 @@ body {
 
 header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-color: #1e24240f;
 }
 
-/* Hamburger Icon */
-.hamburger {
-  margin: 8px;
+.logo {
+  font-family: var(--font-subheading);
+  letter-spacing: 0.2em;
 }
+
+h2 {
+  font-family: var(--font-subheading);
+}
+
+h3 {
+  font-family: var(--font-heading);
+  line-height: 1.5em;
+}
+p {
+  font-family: var(--font-paragraph);
+    line-height: 1.6em;
+
+}
+/* Hamburger Icon */
 
 .bar1,
 .bar2 {
@@ -85,7 +108,7 @@ header {
   align-items: center;
   /* position: absolute; */
   animation-name: dissolve;
-  animation-duration: 1s;
+  animation-duration: 0.4s;
 }
 
 @keyframes dissolve {
