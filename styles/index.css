@@ -1,7 +1,6 @@
 .hero-text {
-  font-family: var(--font-heading);
-  font-size: var(--fs-xl);
   text-align: left;
+  font-size: var(--fs-xxl);
 }
 .greeting {
   display: flex;
@@ -33,7 +32,7 @@ section {
   padding: 4rem 1.3rem;
 }
 .section-2 {
-  background-color: var(--bg-color);
+  background-color: var(--tertiary-color);
 }
 .section-2 p {
   padding-top: 1.2rem;
@@ -49,18 +48,14 @@ section {
   border-top: 1px solid black;
 }
 
+.language-card h3 {
+  font-family: var(--font-paragraph);
+}
+
 .language-card p {
-  font-size: var(--fs-s);
   padding: 0.7rem 0;
 }
 
 .languages img {
   height: 10vh;
-}
-
-.arrow {
-  font-size: 5rem;
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.488);
-  text-align: center;
 }

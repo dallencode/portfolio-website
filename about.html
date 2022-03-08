@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/shared.css" />
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/about.css" />
     <script src="scripts/nav.js" defer></script>
   </head>
   <body>
@@ -33,13 +33,22 @@
     </header>
     <main>
       <h1>About me.</h1>
-      <section class="about-me">
-        <img src="" alt="" />
-        <h3>David Allen</h3>
+      <div class="headshot">
+        <picture>
+          <source
+            srcset="images/headshot-large.png"
+            media="(min-width: 801px)"
+          />
+          <img alt="David Allen Headshot" src="images/headshot-small.png" />
+        </picture>
+      </div>
+      <section class="about-1">
         <p>
           Before commencing study at Coder Academy, I worked for over 10 years
           in the music industry.
         </p>
+      </section>
+      <section class="about-2">
         <p>
           As a pianist and musical directory I have had the privilege to perform
           on some of the best stages in Australia and across the globe. I have
@@ -48,17 +57,34 @@
           maintaining a busy performance schedule, my focus is now on helping
           other businesses reach their potential.
         </p>
+      </section>
+      <section class="about-3">
         <p>
           When I'm not touring or building websites, I enjoy all things Japan!
           After a 2019 trip to the land of the rising sun I was inspired to
           learn the Japanese language and learn to cook my favourite dishes,
           including Ramen and Sushi!
         </p>
-        <div class="read-blog">
-          <p>Read more about my travels, gigs, and how to find balance</p>
-          <a href="blog.html">Check out my blog</a>
-        </div>
       </section>
+      <div class="read-blog">
+        <p>Read more about my travels, gigs, and how to find balance</p>
+        <a href="blog.html">Check out my blog</a>
+      </div>
     </main>
+    <footer>
+      <div>
+        <p>&COPY; 2022</p>
+      </div>
+      <div class="socials">
+        <p>Connect:</p>
+
+        <a href=""
+          ><img src="images/icons/icons8-linkedin.svg" alt="LinkedIn Link"
+        /></a>
+        <a href=""
+          ><img src="images/icons/icons8-github.svg" alt="GitHub Link"
+        /></a>
+      </div>
+    </footer>
   </body>
 </html>
