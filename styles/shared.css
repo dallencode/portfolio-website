@@ -4,8 +4,13 @@
   --font-color: #343838;
   --font-heading: "Suez One", sans-serif;
   --font-subheading: "Bebas Neue", sans-serif;
-  --font-paragraph: "Open Sans", sans-serif;
+  --font-paragraph: "Hubballi", sans-serif;
   --bg-color: #c1c8c7;
+
+  --fs-s: 1.3rem;
+  --fs-m: 1.7rem;
+  --fs-l: 2rem;
+  --fs-xl: clamp(8rem, 12vw + 1rem, 10rem);
  
 }
 
@@ -17,7 +22,7 @@
 
 body {
   min-height: 100vh;
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--font-paragraph);
   background: var(--primary-color);
   color: var(--font-color);
 }
@@ -37,15 +42,17 @@ header {
 
 h2 {
   font-family: var(--font-subheading);
+  font-size: var(--fs-l);
 }
 
 h3 {
   font-family: var(--font-heading);
   line-height: 1.5em;
+  font-size: var(--fs-m);
 }
 p {
   font-family: var(--font-paragraph);
-    line-height: 1.6em;
+    line-height: 1.8em;
 
 }
 /* Hamburger Icon */
@@ -72,7 +79,7 @@ p {
 .nav-menu {
   display: none;
   position: absolute;
-  font-size: 7vh;
+  font-size: var(--fs-l);
 
   height: 100vh;
   width: 100vw;
@@ -90,7 +97,6 @@ p {
 .nav-menu a {
   display: block;
   text-decoration: none;
-  /* font-size: 7vh; */
   color: var(--font-color);
   width: 100vw;
   height: auto;
@@ -119,4 +125,23 @@ p {
   100% {
     opacity: 1;
   }
+}
+
+footer {
+  display: flex;
+  padding: 1rem 4rem;
+  align-items: center;
+  justify-content: space-between;
+  background-color:#171d1d93;
+  color: var(--primary-color);
+}
+
+footer img {
+  width: 2.5rem;
+  display: inline;
+}
+
+.socials {
+  display: inline-flex;
+  align-items: center;
 }

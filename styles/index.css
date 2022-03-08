@@ -1,6 +1,6 @@
 .hero-text {
   font-family: var(--font-heading);
-  font-size: 15vh;
+  font-size: var(--fs-xl);
   text-align: left;
 }
 .greeting {
@@ -30,13 +30,13 @@
 }
 
 section {
-  padding: 2rem 1.3rem;
+  padding: 4rem 1.3rem;
 }
 .section-2 {
   background-color: var(--bg-color);
 }
 .section-2 p {
-  padding-top: 0.7rem;
+  padding-top: 1.2rem;
 }
 
 .language-card {
@@ -50,10 +50,17 @@ section {
 }
 
 .language-card p {
-  font-size: 0.8rem;
+  font-size: var(--fs-s);
   padding: 0.7rem 0;
 }
 
 .languages img {
   height: 10vh;
+}
+
+.arrow {
+  font-size: 5rem;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.488);
+  text-align: center;
 }
