@@ -33,6 +33,7 @@ section {
 }
 .section-2 {
   background-color: var(--tertiary-color);
+  margin: 0 0.85rem;
 }
 .section-2 p {
   padding-top: 1.2rem;

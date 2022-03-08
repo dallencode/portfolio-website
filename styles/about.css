@@ -3,7 +3,7 @@ h1 {
 }
 
 img {
-  border-radius: 100%;
+  border-radius: 6px;
 }
 .headshot {
   text-align: center;
@@ -11,12 +11,28 @@ img {
 }
 
 .about-1,
-.about-2,
-.about-3 {
+.about-2 {
   padding: 2rem 2rem;
 }
 
-.about-1,
-.about-3 {
+.about-2 {
   background: var(--tertiary-color);
+}
+
+.read-blog {
+  padding: 5rem;
+  text-align: center;
+}
+
+.read-blog a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 1px;
+  color: var(--primary-color);
+  background: var(--secondary-color);
+}
+
+.read-blog a:hover {
+  background: #383939;
 }
