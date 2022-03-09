@@ -17,6 +17,7 @@ img {
 
 .about-2 {
   background: var(--tertiary-color);
+   margin: 0 1rem;
 }
 
 .read-blog {

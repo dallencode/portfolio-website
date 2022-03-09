@@ -48,6 +48,7 @@ h1 {
 h2 {
   font-family: var(--font-subheading);
   font-size: var(--fs-l);
+  letter-spacing: 0.15rem;
 }
 
 h3 {
@@ -134,7 +135,7 @@ p {
 
 footer {
   display: flex;
-  padding: 1rem 4rem;
+  padding: 1rem 2rem;
   align-items: center;
   justify-content: space-between;
   background-color: #171d1d93;
@@ -144,6 +145,12 @@ footer {
 footer img {
   width: 2.5rem;
   display: inline;
+  padding-left: 0.4rem;
+  transition-duration: 0.25s;
+}
+
+footer img:hover {
+  filter: invert(0.85);
 }
 
 .socials {

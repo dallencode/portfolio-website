@@ -33,7 +33,7 @@ section {
 }
 .section-2 {
   background-color: var(--tertiary-color);
-  margin: 0 0.85rem;
+  margin: 0 1rem;
 }
 .section-2 p {
   padding-top: 1.2rem;
@@ -59,4 +59,8 @@ section {
 
 .languages img {
   height: 10vh;
+}
+
+.languages img:hover {
+  width: 9vh;
 }
