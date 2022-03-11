@@ -82,13 +82,14 @@ p {
   transform: rotate(45deg) translate(-2px, -2px);
 }
 
-/* Menu */
+/* Nav Menu */
 .nav-menu {
   display: none;
-  position: absolute;
+  position: fixed;
+  overflow: hidden;
   font-size: 3rem;
   height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
   top: 0;
   left: 0;
   line-height: 1.7em;
@@ -112,6 +113,10 @@ p {
 
 .nav-menu a:hover {
   background-color: #1d242423;
+}
+
+.nav-menu .current {
+  background-color: var(--tertiary-color);
 }
 
 .show-menu {
