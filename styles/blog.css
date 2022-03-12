@@ -73,13 +73,13 @@ h1, .sub-heading {
   text-decoration: none;
   margin-top: 1em;
   padding: 0.4rem;
-  border-radius: 10px;
+  border-radius: 4px;
   color: var(--primary-color);
-  background: var(--secondary-color);
+  background: #5d6060;
 }
 
-.read-blog a:hover {
-  background: #383939;
+.cont-read:hover {
+  background: #3c3f3f;
 }
 
 @media screen and (min-width: 641px) {

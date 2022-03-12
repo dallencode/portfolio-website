@@ -11,15 +11,15 @@
 
 .standout {
   text-transform: uppercase;
-  animation: glow 2s ease-in infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 10px rgb(28, 28, 233);
+    text-shadow: 6px 3px 10px #3aa4c1;
   }
   to {
-    text-shadow: 0 0 10px #da1b1b;
+    text-shadow: 3px 6px 10px #5f1c39;
   }
 }
 
@@ -32,6 +32,7 @@ section {
   padding: 3.8rem 1.3rem;
 }
 .section-2 {
+  color: var(--font-color);
   background-color: var(--tertiary-color);
   margin: 0 1rem;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.192);
@@ -65,4 +66,11 @@ section {
 
 .languages img:hover {
   width: 9vh;
+}
+
+@media screen and (min-width: 769px) {
+  .language-card {
+    flex-flow: row nowrap;
+  }
+  
 }

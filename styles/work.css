@@ -13,7 +13,8 @@ h3 {
 }
 
 .highlight {
-  background-color: aquamarine;
+  background-color: rgb(141, 196, 183);
+  color: black;
   text-decoration: none;
 }
 
@@ -32,7 +33,7 @@ ul {
   margin: 1rem;
   border-radius: 3px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.166);
-  background-color: rgb(234, 242, 242);
+  background-color: var(--tertiary-color);
 }
 
 .projects img {
@@ -54,6 +55,7 @@ ul {
 .projects p {
   max-width: 100%;
   margin: 2.5rem 0;
+  padding-right: .73rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -66,6 +68,5 @@ ul {
     display: block;
     width: 95%;
     margin: 0 auto;
-    border-radius: 0;
   }
 }
