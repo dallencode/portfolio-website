@@ -178,6 +178,10 @@ footer {
   color: var(--primary-color);
 }
 
+footer p {
+  font-size: clamp(1rem, 4vw + 0.2rem, 1.5rem);
+}
+
 footer img {
   width: 2.5rem;
   display: inline;
