@@ -25,11 +25,11 @@
 
 .sub-hero {
   letter-spacing: 0.2em;
-  margin-top: 5vh;
+  margin-top: 3.5vh;
 }
 
 section {
-  padding: 4rem 1.3rem;
+  padding: 3.8rem 1.3rem;
 }
 .section-2 {
   background-color: var(--tertiary-color);

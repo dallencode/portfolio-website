@@ -7,8 +7,8 @@
   --font-subheading: "Bebas Neue", sans-serif;
   --font-paragraph: "Hubballi", sans-serif;
 
-  --fs-s: 1.3rem;
-  --fs-m: 1.7rem;
+  --fs-s: 1.5rem;
+  --fs-m: 1.8rem;
   --fs-l: 2rem;
   --fs-xl: 4rem;
   --fs-xxl: clamp(8rem, 12vw + 1rem, 10rem);
@@ -25,13 +25,20 @@ body {
   font-family: var(--font-paragraph);
   background: var(--primary-color);
   color: var(--font-color);
+  min-width: 400px;
+}
+
+main {
+  max-width: 60rem;
+  margin: 0 auto;
 }
 
 header {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 1em;
+  padding: 1.5em;
   background-color: #1e24240f;
 }
 
@@ -65,6 +72,10 @@ p {
 }
 /* Hamburger Icon */
 
+.hamburger {
+  display: none;
+}
+
 .bar1,
 .bar2 {
   width: 40px;
@@ -83,18 +94,8 @@ p {
   transform: rotate(45deg) translate(-2px, -2px);
 }
 
-/* Nav Menu */
 .nav-menu {
-  display: none;
-  position: fixed;
-  overflow: hidden;
-  font-size: 3rem;
-  height: 100vh;
-  /* width: 100vw; */
-  top: 0;
-  left: 0;
-  line-height: 1.7em;
-  background-color: var(--primary-color);
+  font-size: var(--fs-s);
 }
 
 .nav-menu ul {
@@ -102,40 +103,69 @@ p {
   text-align: center;
 }
 
-.nav-menu a {
-  display: block;
-  text-decoration: none;
-  color: var(--font-color);
-  width: 100vw;
-  height: auto;
-  background-color: #1d24240f;
-  margin-bottom: 0.2vh;
-}
-
 .nav-menu a:hover {
   background-color: #1d242423;
 }
 
-.nav-menu .current {
-  background-color: var(--tertiary-color);
+.nav-menu li {
+  display: inline;
 }
 
-.show-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* position: absolute; */
-  animation-name: dissolve;
-  animation-duration: 0.4s;
+.nav-menu a {
+  display: inline;
+  text-decoration: none;
+  color: var(--font-color);
+  padding: 0.5rem;
+  border-radius: 2px;
 }
 
-@keyframes dissolve {
-  0% {
-    opacity: 0;
+@media screen and (max-width: 768px) {
+  /* Nav Menu */
+
+  .hamburger {
+    display: block;
+  }
+  .nav-menu {
+    display: none;
+    position: fixed;
+    overflow: hidden;
+    font-size: 3rem;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    line-height: 1.7em;
+    background-color: var(--primary-color);
   }
 
-  100% {
-    opacity: 1;
+  .nav-menu a {
+    display: block;
+    width: 100vw;
+    height: auto;
+    background-color: #1d24240f;
+    margin-bottom: 0.2vh;
+  }
+
+  .nav-menu .current {
+    background-color: var(--tertiary-color);
+  }
+
+  .show-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: absolute; */
+    animation-name: dissolve;
+    animation-duration: 0.4s;
+  }
+
+  @keyframes dissolve {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
   }
 }
 
