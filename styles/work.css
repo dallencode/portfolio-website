@@ -25,33 +25,47 @@ ul {
   list-style: none;
 }
 
-.projects {
-  display: flex;
-  flex-direction: column;
-}
-
 .projects li {
+  display: flex;
   height: fit-content;
   padding: 1.4rem;
   margin: 1rem;
   border-radius: 3px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.166);
-  background-color:rgb(234, 242, 242)
+  background-color: rgb(234, 242, 242);
 }
 
 .projects img {
-  width: 9rem;
-  height: 12rem;
-  border-radius: 6px;
+  width: 50%;
+  height: auto;
+  border-radius: 3px 18px 3px 18px;
+  object-fit: contain;
+  align-self: flex-start;
 }
 
-.proj-flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-bottom: 1.5rem;
-}
-
-.project2 .proj-flex {
+.project2 {
   flex-direction: row-reverse;
+}
+
+.project2 div {
+  margin-left: 1.5rem;
+}
+
+.projects p {
+  max-width: 100%;
+  margin: 2.5rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .projects li {
+    display: block;
+    justify-content: center;
+  }
+
+  .projects img {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 0;
+  }
 }
