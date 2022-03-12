@@ -28,6 +28,7 @@ img {
 .read-blog a {
   display: inline-block;
   text-decoration: none;
+  margin-top: 1em;
   padding: 1rem;
   border-radius: 1px;
   color: var(--primary-color);

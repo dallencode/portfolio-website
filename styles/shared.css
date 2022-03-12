@@ -38,6 +38,7 @@ header {
 .logo {
   font-family: var(--font-subheading);
   letter-spacing: 0.2em;
+  padding: 1.5rem;
 }
 
 h1 {
@@ -140,7 +141,7 @@ p {
 
 footer {
   display: flex;
-  padding: 1rem 2rem;
+  padding: 3rem 2rem;
   align-items: center;
   justify-content: space-between;
   background-color: #171d1d93;
