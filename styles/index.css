@@ -2,8 +2,9 @@
 
 .hero-text {
   text-align: left;
-  font-size: var(--fs-xxl);
+  font-size: 16vh;
 }
+
 .greeting {
   display: flex;
   flex-flow: column wrap;
@@ -33,7 +34,7 @@
 /* Blurb Section */
 
 section {
-  padding: 3.8rem 1.3rem;
+  padding: 1.3rem;
 }
 .section-2 {
   color: var(--font-color);
@@ -84,5 +85,8 @@ section {
 @media screen and (min-width: 769px) {
   .language-card {
     flex-flow: row nowrap;
+  }
+  .hero-text {
+    font-size: var(--fs-xxl);
   }
 }
