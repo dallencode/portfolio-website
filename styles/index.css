@@ -38,6 +38,13 @@ section {
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.192);
   border-radius: 2px;
 }
+
+.blurb {
+  font-family: var(--font-heading);
+  line-height: 1.5em;
+  font-size: var(--fs-m);
+}
+
 .section-2 p {
   padding-top: 1.2rem;
 }

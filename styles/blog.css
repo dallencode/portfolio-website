@@ -1,4 +1,5 @@
-h1, .sub-heading {
+h1,
+.sub-heading {
   width: 100%;
   padding: 1.5rem;
 }
@@ -14,6 +15,10 @@ h1, .sub-heading {
   margin-top: 2em;
   padding: 1em;
   box-shadow: 2px 2px 10px rgba(151, 139, 139, 0.61);
+}
+
+.feature {
+  border: 14px outset rgb(0, 217, 255);
 }
 
 .blog-1 {
@@ -55,8 +60,6 @@ h1, .sub-heading {
 }
 
 .blog-4 {
-  grid-column: 1 / 3;
-  grid-row: 3;
   color: whitesmoke;
   background: linear-gradient(
       to bottom,
@@ -64,6 +67,17 @@ h1, .sub-heading {
       rgba(0, 0, 0, 0.616) 100%
     ),
     url(https://cdn.pixabay.com/photo/2018/01/17/07/06/laptop-3087585_1280.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.blog-5 {
+  color: black;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.345) 0%,
+      rgba(255, 255, 255, 0.7) 100%
+    ),
+    url(https://images.unsplash.com/photo-1606103920295-9a091573f160?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -86,5 +100,4 @@ h1, .sub-heading {
   .grid-layout {
     display: grid;
   }
-  
 }
