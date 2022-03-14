@@ -1,3 +1,5 @@
+/* Intro Section */
+
 .hero-text {
   text-align: left;
   font-size: var(--fs-xxl);
@@ -28,6 +30,8 @@
   margin-top: 3.5vh;
 }
 
+/* Blurb Section */
+
 section {
   padding: 3.8rem 1.3rem;
 }
@@ -48,6 +52,8 @@ section {
 .section-2 p {
   padding-top: 1.2rem;
 }
+
+/* Language Section */
 
 .language-card {
   display: flex;
@@ -72,12 +78,11 @@ section {
 }
 
 .languages img:hover {
-  width: 9vh;
+  filter: brightness(1.1);
 }
 
 @media screen and (min-width: 769px) {
   .language-card {
     flex-flow: row nowrap;
   }
-  
 }

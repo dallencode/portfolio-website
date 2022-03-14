@@ -1,3 +1,5 @@
+/* Global Styles */
+
 :root {
   --primary-color: #fffafa;
   --secondary-color: #eeedeb;
@@ -33,6 +35,8 @@ main {
   margin: 0 auto;
 }
 
+/* Header Component */
+
 header {
   display: flex;
   flex-wrap: nowrap;
@@ -51,6 +55,8 @@ header {
   letter-spacing: 0.2em;
   padding: 1.5rem 0;
 }
+
+/* Global Text Styles */
 
 h1 {
   font-family: var(--font-heading);
@@ -74,6 +80,7 @@ p {
   line-height: 1.8em;
   font-size: var(--fs-s);
 }
+
 /* Hamburger Icon */
 
 .hamburger {
@@ -97,7 +104,7 @@ p {
 .change .bar2 {
   transform: rotate(45deg) translate(-2px, -2px);
 }
-
+/* Nav Component */
 .nav-menu {
   font-size: var(--fs-s);
 }
@@ -124,7 +131,7 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-  /* Nav Menu */
+  /* Nav Menu Mobile */
 
   .hamburger {
     display: block;
@@ -188,7 +195,8 @@ footer {
   background: linear-gradient(
     0deg,
     rgba(208, 215, 215) 24%,
-    rgba(255, 250, 250, 1) 100%);
+    rgba(255, 250, 250, 1) 100%
+  );
   color: var(--font-color);
 }
 

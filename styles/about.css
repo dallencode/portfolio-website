@@ -1,3 +1,4 @@
+/* Headshot */
 .split-flex img {
   border-radius: 6px;
   max-height: 30rem;
@@ -13,7 +14,7 @@
   align-items: center;
   justify-content: space-evenly;
 }
-
+/* About Me Section */
 .about-a {
   padding: 2rem 2rem;
   background: var(--tertiary-color);
