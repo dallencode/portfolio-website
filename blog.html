@@ -17,12 +17,13 @@
     <script src="scripts/nav.js" defer></script>
   </head>
   <body>
+    <!-- Header Component -->
     <header>
       <h2 class="logo">David Allen</h2>
       <nav class="nav-menu" id="open-close">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="work.html">My Work</a></li>
+          <li><a href="work.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a class="current" href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -33,64 +34,82 @@
         <div class="bar2"></div>
       </div>
     </header>
+    <!--  -->
     <main>
       <h1>Read my blog!</h1>
       <h2 class="sub-heading">
         From all things music to travel, code and how to avoid burnout.
       </h2>
-      <div class="grid-layout">
-        <article class="blog-post blog-1 feature">
-          <h3>Where To See Live Music In Sydney</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias quod
-            sequi quisquam delectus iste, quis magnam hic, deserunt laudantium
-            consectetur velit ullam temporibus accusamus rerum provident vero
-            animi! Sunt, vitae?
-          </p>
-          <a class="cont-read" href="">Continue</a>
-        </article>
-        <article class="blog-post blog-2">
-          <h3>CSS Pseudo Selectors: Explained</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id
-            accusantium vitae amet corrupti autem cumque accusamus vel sequi
-            odio rerum dolor consequatur cum, magnam tempore hic voluptas
-            facere, corporis consequuntur.
-          </p>
-          <a class="cont-read" href="">Continue</a>
-        </article>
-        <article class="blog-post blog-3">
-          <h3>Becoming Bilingual</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
-            debitis eius autem ex, ipsa culpa asperiores accusamus itaque
-            quisquam temporibus ratione accusantium quaerat magni, cumque sequi
-            incidunt cupiditate distinctio tempora.
-          </p>
-          <a class="cont-read" href="">Continue</a>
-        </article>
-        <article class="blog-post blog-4">
-          <h3>7 Things I Wish I Knew Before Starting to Code</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut
-            obcaecati officia necessitatibus ab quae iusto molestiae delectus
-            minima eveniet voluptatem iste fugit sed non, quo architecto
-            distinctio sint. Fugiat, dolore!
-          </p>
-          <a class="cont-read" href="">Continue</a>
-        </article>
-        <article class="blog-post blog-5">
-          <h3>Balancing Act: How to Avoid Burnout</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut
-            obcaecati officia necessitatibus ab quae iusto molestiae delectus
-            minima eveniet voluptatem iste fugit sed non, quo architecto
-            distinctio sint. Fugiat, dolore!
-          </p>
-          <a class="cont-read" href="">Continue</a>
-        </article>
-      </div>
+      <ol class="grid-layout">
+        <li class="blog-post blog-1 feature">
+          <article>
+            <h3>Where To See Live Music In Sydney</h3>
+            <h4><time datetime="2022-03-14">14 Mar 2022</time></h4>
+
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias
+              quod sequi quisquam delectus iste, quis magnam hic, deserunt
+              laudantium consectetur velit ullam temporibus accusamus rerum
+              provident vero animi! Sunt, vitae?
+            </p>
+            <a class="cont-read" href="/blog-posts/blog-1.html">Continue</a>
+          </article>
+        </li>
+        <li class="blog-post blog-2">
+          <article>
+            <h3>CSS Pseudo Selectors: Explained</h3>
+            <h4><time datetime="2022-03-13">13 Mar 2022</time></h4>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id
+              accusantium vitae amet corrupti autem cumque accusamus vel sequi
+              odio rerum dolor consequatur cum, magnam tempore hic voluptas
+              facere, corporis consequuntur.
+            </p>
+            <a class="cont-read" href="">Continue</a>
+          </article>
+        </li>
+        <li class="blog-post blog-3">
+          <article>
+            <h3>Becoming Bilingual</h3>
+            <h4><time datetime="2022-03-12">12 Mar 2022</time></h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
+              debitis eius autem ex, ipsa culpa asperiores accusamus itaque
+              quisquam temporibus ratione accusantium quaerat magni, cumque
+              sequi incidunt cupiditate distinctio tempora.
+            </p>
+            <a class="cont-read" href="">Continue</a>
+          </article>
+        </li>
+        <li class="blog-post blog-4">
+          <article>
+            <h3>7 Things I Wish I Knew Before Starting to Code</h3>
+            <h4><time datetime="2022-03-11">11 Mar 2022</time></h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut
+              obcaecati officia necessitatibus ab quae iusto molestiae delectus
+              minima eveniet voluptatem iste fugit sed non, quo architecto
+              distinctio sint. Fugiat, dolore!
+            </p>
+            <a class="cont-read" href="">Continue</a>
+          </article>
+        </li>
+        <li class="blog-post blog-5">
+          <article>
+            <h3>Balancing Act: How to Avoid Burnout</h3>
+            <h4><time datetime="2022-03-10">10 Mar 2022</time></h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut
+              obcaecati officia necessitatibus ab quae iusto molestiae delectus
+              minima eveniet voluptatem iste fugit sed non, quo architecto
+              distinctio sint. Fugiat, dolore!
+            </p>
+            <a class="cont-read" href="">Continue</a>
+          </article>
+        </li>
+      </ol>
     </main>
+    <!-- Footer Component -->
     <footer>
       <div>
         <p>&COPY; D Allen 2022</p>
@@ -98,16 +117,19 @@
       <div class="socials">
         <p>Connect:</p>
 
-        <a href=""
+        <a href="https://linkedin.com/in/david-a-2a5284231" target="_blank"
           ><img src="images/icons/icons8-linkedin.svg" alt="LinkedIn Link"
         /></a>
-        <a href=""
+        <a href="https://github.com/dallencode" target="_blank"
           ><img src="images/icons/icons8-github.svg" alt="GitHub Link"
         /></a>
-        <a href=""
+        <a
+          href="mailto: fake@notreal.com?subject=New Enquiry for David Allen"
+          target="_blank"
           ><img src="images/icons/email-svgrepo-com.svg" alt="Email Link"
         /></a>
       </div>
     </footer>
+    <!--  -->
   </body>
 </html>

@@ -39,10 +39,9 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1.5em;
-  background: rgb(200, 208, 210);
   background: linear-gradient(
     180deg,
-    rgba(200, 208, 210, 1) 24%,
+    rgb(208, 215, 215) 24%,
     rgba(255, 250, 250, 1) 100%
   );
 }
@@ -50,7 +49,7 @@ header {
 .logo {
   font-family: var(--font-heading);
   letter-spacing: 0.2em;
-  padding: 1.5rem;
+  padding: 1.5rem 0;
 }
 
 h1 {
@@ -150,6 +149,11 @@ p {
     margin-bottom: 0.2vh;
   }
 
+  .nav-menu a:hover {
+    box-shadow: none;
+    background-color: var(--tertiary-color);
+  }
+
   .nav-menu .current {
     background-color: var(--tertiary-color);
   }
@@ -174,17 +178,17 @@ p {
   }
 }
 
+/* Footer Component */
+
 footer {
   display: flex;
   padding: 3rem 2rem;
   align-items: center;
   justify-content: space-between;
-  background: rgb(200, 208, 210);
   background: linear-gradient(
     0deg,
-    rgb(153, 155, 155) 24%,
-    rgba(255, 250, 250, 1) 100%
-  );
+    rgba(208, 215, 215) 24%,
+    rgba(255, 250, 250, 1) 100%);
   color: var(--font-color);
 }
 

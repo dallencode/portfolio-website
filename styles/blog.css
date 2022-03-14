@@ -5,10 +5,10 @@ h1,
 }
 
 .grid-layout {
-  /* display: grid; */
   grid-template-columns: repeat(2, 2fr);
   gap: 0.8rem;
   padding: 1.7rem;
+  list-style: none;
 }
 
 .blog-post {

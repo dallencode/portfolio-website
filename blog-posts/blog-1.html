@@ -12,9 +12,8 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
-    <link rel="stylesheet" href="styles/shared.css" />
-    <link rel="stylesheet" href="styles/index.css" />
-    <script src="scripts/nav.js" defer></script>
+    <link rel="stylesheet" href="/styles/shared.css" />
+    <script src="/scripts/nav.js" defer></script>
   </head>
   <body>
     <!-- Header Component -->
@@ -22,11 +21,11 @@
       <h2 class="logo">David Allen</h2>
       <nav class="nav-menu" id="open-close">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a class="current" href="contact.html">Contact</a></li>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/work.html">Work</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a class="current" href="/blog.html">Blog</a></li>
+          <li><a href="/contact.html">Contact</a></li>
         </ul>
       </nav>
       <div class="hamburger" id="hamburger" onclick="openClose(this)">
@@ -35,7 +34,22 @@
       </div>
     </header>
     <!--  -->
-    <main></main>
+    <main>
+      <a href="/blog.html">
+        <h2>&larr; Blog</h2>
+      </a>
+      <article>
+        <header>
+          <h1></h1>
+          <h3></h3>
+        </header>
+        <section class="main-content">
+          <p></p>
+          <img src="" alt="" />
+        </section>
+        <footer></footer>
+      </article>
+    </main>
     <!-- Footer Component -->
     <footer>
       <div>
