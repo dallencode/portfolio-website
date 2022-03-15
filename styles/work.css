@@ -57,7 +57,7 @@ ul {
 .projects p {
   max-width: 100%;
   margin: 2.5rem 0;
-  padding-right: .73rem;
+  padding-right: 0.73rem;
 }
 
 @media screen and (max-width: 768px) {

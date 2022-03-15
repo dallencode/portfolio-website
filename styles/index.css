@@ -35,6 +35,8 @@
 
 section {
   padding: 1.3rem;
+  animation: 1s ease-out 0s 1 fadeIn;
+
 }
 
 .section-2 {
