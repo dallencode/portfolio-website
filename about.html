@@ -18,18 +18,20 @@
   </head>
   <body>
     <!-- Header Component -->
-    <header>
-      <a class="logo-link" href="/index.html"
-        ><h2 class="logo">David Allen</h2></a
-      >
+    <header id="top">
+      <div>
+        <a class="logo-link" href="/index.html" tabindex="-1"
+          ><h2 class="logo">David Allen</h2></a
+        >
+      </div>
       <!-- Nav Component -->
       <nav class="nav-menu" id="open-close">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a class="current" href="about.html">About</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a class="current" href="index.html" tabindex="0">Home</a></li>
+          <li><a href="work.html" tabindex="0">Work</a></li>
+          <li><a href="about.html" tabindex="0">About</a></li>
+          <li><a href="blog.html" tabindex="0">Blog</a></li>
+          <li><a href="contact.html" tabindex="0">Contact</a></li>
         </ul>
       </nav>
       <div class="hamburger" id="hamburger" onclick="openClose(this)">
@@ -41,7 +43,7 @@
     <main>
       <!-- Headshot -->
       <div class="split-flex">
-        <h1>About me.</h1>
+        <h1 tabindex="0">About me.</h1>
         <picture>
           <source
             class="headshot"
@@ -57,19 +59,19 @@
       </div>
       <!-- About Me Section -->
       <section>
-        <p class="about-a">
+        <p class="about-a" tabindex="0">
           Before commencing study at Coder Academy, I worked for over 10 years
           in the music industry. As a pianist and musical director I have had
           the privilege to perform on some of the best stages in Australia and
           across the globe.
         </p>
-        <p class="about-b">
+        <p class="about-b" tabindex="0">
           In addition to performing I've enjoyed sharing my skills with others,
           tutoring in schools, online and at my private studio. Whilst I still
           maintain a busy performance schedule, my focus is now on helping other
           artists and creatives improve their online presence.
         </p>
-        <p class="about-a">
+        <p class="about-a" tabindex="0">
           When I'm not touring or building websites, I enjoy learning and
           exploring all things Japan! After a 2019 trip to the land of the
           rising sun I was inspired to learn the Japanese language as well as
@@ -78,8 +80,8 @@
       </section>
 
       <div class="read-blog">
-        <p>Read more about my travels, gigs, and coding journey</p>
-        <a href="blog.html">Check out my blog</a>
+        <p tabindex="0">Read more about my travels, gigs, and coding journey</p>
+        <a href="blog.html" tabindex="0">Check out my blog</a>
       </div>
     </main>
     <!-- Footer Component -->
@@ -90,13 +92,16 @@
       <div class="socials">
         <p>Connect:</p>
 
-        <a href="https://linkedin.com/in/david-a-2a5284231" target="_blank"
+        <a
+          href="https://linkedin.com/in/david-a-2a5284231"
+          target="_blank"
+          tabindex="0"
           ><img
             src="images/icons/icons8-linkedin.svg"
             alt="LinkedIn Link"
             title="LinkedIn"
         /></a>
-        <a href="https://github.com/dallencode" target="_blank"
+        <a href="https://github.com/dallencode" target="_blank" tabindex="0"
           ><img
             src="images/icons/icons8-github.svg"
             alt="GitHub Link"
@@ -105,6 +110,7 @@
         <a
           href="mailto: fake@notreal.com?subject=New Enquiry for David Allen"
           target="_blank"
+          tabindex="0"
           ><img
             src="images/icons/email-svgrepo-com.svg"
             alt="Email Link"

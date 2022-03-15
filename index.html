@@ -20,18 +20,18 @@
     <!-- Header Component -->
     <header id="top">
       <div>
-        <a class="logo-link" href="/index.html"
+        <a class="logo-link" href="/index.html" tabindex="-1"
           ><h2 class="logo">David Allen</h2></a
         >
       </div>
       <!-- Nav Component -->
       <nav class="nav-menu" id="open-close">
         <ul>
-          <li><a class="current" href="index.html">Home</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a class="current" href="index.html" tabindex="0">Home</a></li>
+          <li><a href="work.html" tabindex="0">Work</a></li>
+          <li><a href="about.html" tabindex="0">About</a></li>
+          <li><a href="blog.html" tabindex="0">Blog</a></li>
+          <li><a href="contact.html" tabindex="0">Contact</a></li>
         </ul>
       </nav>
       <div class="hamburger" id="hamburger" onclick="openClose(this)">
@@ -41,7 +41,7 @@
     </header>
     <main>
       <!-- Intro Section -->
-      <section class="section-1">
+      <section class="section-1" tabindex="0">
         <div class="greeting">
           <h1 class="hero-text">Hi, I'm <span class="standout">Dave</span></h1>
           <h2 class="sub-hero">I'm a Full-stack Dev based in Sydney, AUS</h2>
@@ -49,27 +49,27 @@
       </section>
       <!-- Blurb -->
       <section class="section-2">
-        <p class="blurb">
+        <p class="blurb" tabindex="0">
           Since commencing study at Coder Academy I've gained a wealth of
           knowledge in writing efficient code, as well as project management.
         </p>
-        <p>
+        <p tabindex="0">
           I've been learning HTML5, CSS3, JavaScript, Ruby and Python. With a
           focus on simple design and usability, I want to use these skills to
           <strong><em>create</em></strong> and
           <strong><em>innovate.</em></strong> My aim is to work in the tech
           industry as a web, software or app developer (or all of the above!)
         </p>
-        <p>
+        <p tabindex="0">
           I particularly enjoy writing scripts to automate tasks like sending
           emails, updating calendars and converting files.
         </p>
       </section>
       <!-- Language Section -->
       <section class="section-3">
-        <h2>Language Skills</h2>
+        <h2 tabindex="0">Language Skills</h2>
         <ul class="languages">
-          <li class="language-card">
+          <li class="language-card" tabindex="0">
             <h3>HTML</h3>
             <p>Ensuring sites are accessible by everyone</p>
             <img
@@ -78,7 +78,7 @@
               title="HTML5"
             />
           </li>
-          <li class="language-card">
+          <li class="language-card" tabindex="0">
             <h3>CSS</h3>
             <p>
               Using simple, beautiful design to give users a memorable
@@ -90,7 +90,7 @@
               title="CSS3"
             />
           </li>
-          <li class="language-card">
+          <li class="language-card" tabindex="0">
             <h3>JavaScript</h3>
             <p>Delivering a personalised experience for each visitor</p>
             <img
@@ -99,7 +99,7 @@
               title="JavaScript"
             />
           </li>
-          <li class="language-card">
+          <li class="language-card" tabindex="0">
             <h3>Python</h3>
             <p>Making the machines do the boring stuff</p>
             <img
@@ -119,13 +119,16 @@
       <div class="socials">
         <p>Connect:</p>
 
-        <a href="https://linkedin.com/in/david-a-2a5284231" target="_blank"
+        <a
+          href="https://linkedin.com/in/david-a-2a5284231"
+          target="_blank"
+          tabindex="0"
           ><img
             src="images/icons/icons8-linkedin.svg"
             alt="LinkedIn Link"
             title="LinkedIn"
         /></a>
-        <a href="https://github.com/dallencode" target="_blank"
+        <a href="https://github.com/dallencode" target="_blank" tabindex="0"
           ><img
             src="images/icons/icons8-github.svg"
             alt="GitHub Link"
@@ -134,6 +137,7 @@
         <a
           href="mailto: fake@notreal.com?subject=New Enquiry for David Allen"
           target="_blank"
+          tabindex="0"
           ><img
             src="images/icons/email-svgrepo-com.svg"
             alt="Email Link"

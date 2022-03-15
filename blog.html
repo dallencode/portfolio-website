@@ -18,18 +18,20 @@
   </head>
   <body>
     <!-- Header Component -->
-    <header>
-      <a class="logo-link" href="/index.html"
-        ><h2 class="logo">David Allen</h2></a
-      >
+    <header id="top">
+      <div>
+        <a class="logo-link" href="/index.html" tabindex="-1"
+          ><h2 class="logo">David Allen</h2></a
+        >
+      </div>
       <!-- Nav Component -->
       <nav class="nav-menu" id="open-close">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a class="current" href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a class="current" href="index.html" tabindex="0">Home</a></li>
+          <li><a href="work.html" tabindex="0">Work</a></li>
+          <li><a href="about.html" tabindex="0">About</a></li>
+          <li><a href="blog.html" tabindex="0">Blog</a></li>
+          <li><a href="contact.html" tabindex="0">Contact</a></li>
         </ul>
       </nav>
       <div class="hamburger" id="hamburger" onclick="openClose(this)">
@@ -38,18 +40,18 @@
       </div>
     </header>
     <main>
-      <h1>Read my blog!</h1>
-      <h2 class="sub-heading">
+      <h1 tabindex="0">Read my blog!</h1>
+      <h2 class="sub-heading" tabindex="0">
         From all things music to travel, code and how to avoid burnout.
       </h2>
       <!-- Blog List -->
       <ol class="grid-layout">
         <li class="blog-post blog-1 feature">
           <article>
-            <h3>Where To See Live Music In Sydney</h3>
-            <h4><time datetime="2022-03-14">14 Mar 2022</time></h4>
+            <h3 tabindex="0">Where To See Live Music In Sydney</h3>
+            <h4 tabindex="0"><time datetime="2022-03-14">14 Mar 2022</time></h4>
 
-            <p>
+            <p tabindex="0">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias
               quod sequi quisquam delectus iste, quis magnam hic, deserunt
               laudantium consectetur velit ullam temporibus accusamus rerum
@@ -60,9 +62,9 @@
         </li>
         <li class="blog-post blog-2">
           <article>
-            <h3>CSS Pseudo Selectors: Explained</h3>
-            <h4><time datetime="2022-03-13">13 Mar 2022</time></h4>
-            <p>
+            <h3 tabindex="0">CSS Pseudo Selectors: Explained</h3>
+            <h4 tabindex="0"><time datetime="2022-03-13">13 Mar 2022</time></h4>
+            <p tabindex="0">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id
               accusantium vitae amet corrupti autem cumque accusamus vel sequi
               odio rerum dolor consequatur cum, magnam tempore hic voluptas
@@ -73,9 +75,9 @@
         </li>
         <li class="blog-post blog-3">
           <article>
-            <h3>Becoming Bilingual</h3>
-            <h4><time datetime="2022-03-12">12 Mar 2022</time></h4>
-            <p>
+            <h3 tabindex="0">Becoming Bilingual</h3>
+            <h4 tabindex="0"><time datetime="2022-03-12">12 Mar 2022</time></h4>
+            <p tabindex="0">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
               debitis eius autem ex, ipsa culpa asperiores accusamus itaque
               quisquam temporibus ratione accusantium quaerat magni, cumque
@@ -86,9 +88,9 @@
         </li>
         <li class="blog-post blog-4">
           <article>
-            <h3>7 Things I Wish I Knew Before Starting to Code</h3>
-            <h4><time datetime="2022-03-11">11 Mar 2022</time></h4>
-            <p>
+            <h3 tabindex="0">7 Things I Wish I Knew Before Starting to Code</h3>
+            <h4 tabindex="0"><time datetime="2022-03-11">11 Mar 2022</time></h4>
+            <p tabindex="0">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut
               obcaecati officia necessitatibus ab quae iusto molestiae delectus
               minima eveniet voluptatem iste fugit sed non, quo architecto
@@ -99,9 +101,9 @@
         </li>
         <li class="blog-post blog-5">
           <article>
-            <h3>Balancing Act: How to Avoid Burnout</h3>
-            <h4><time datetime="2022-03-10">10 Mar 2022</time></h4>
-            <p>
+            <h3 tabindex="0">Balancing Act: How to Avoid Burnout</h3>
+            <h4 tabindex="0"><time datetime="2022-03-10">10 Mar 2022</time></h4>
+            <p tabindex="0">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut
               obcaecati officia necessitatibus ab quae iusto molestiae delectus
               minima eveniet voluptatem iste fugit sed non, quo architecto
@@ -113,20 +115,23 @@
       </ol>
     </main>
     <!-- Footer Component -->
-    <footer>
+     <footer>
       <div>
         <p>&COPY; D Allen 2022</p>
       </div>
       <div class="socials">
         <p>Connect:</p>
 
-        <a href="https://linkedin.com/in/david-a-2a5284231" target="_blank"
+        <a
+          href="https://linkedin.com/in/david-a-2a5284231"
+          target="_blank"
+          tabindex="0"
           ><img
             src="images/icons/icons8-linkedin.svg"
             alt="LinkedIn Link"
             title="LinkedIn"
         /></a>
-        <a href="https://github.com/dallencode" target="_blank"
+        <a href="https://github.com/dallencode" target="_blank" tabindex="0"
           ><img
             src="images/icons/icons8-github.svg"
             alt="GitHub Link"
@@ -135,6 +140,7 @@
         <a
           href="mailto: fake@notreal.com?subject=New Enquiry for David Allen"
           target="_blank"
+          tabindex="0"
           ><img
             src="images/icons/email-svgrepo-com.svg"
             alt="Email Link"

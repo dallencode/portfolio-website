@@ -1,0 +1,59 @@
+body{ 
+  display:flex; 
+  flex-direction:column; 
+}
+
+footer{
+  margin-top:auto; 
+}
+
+main {
+  box-sizing: content-box;
+}
+
+h1 {
+  margin: 4vh 4vw;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.contact-flex {
+  display: grid;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 80%;
+  margin: 4.5rem auto 5rem auto;
+  padding: 2rem;
+  background-color: var(--tertiary-color);
+  border-radius: 4px;
+}
+
+.contact-flex p {
+  font-size: 1.3rem;
+}
+
+.contact-flex img {
+  max-width: 10%;
+  animation: 2s spin;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(720deg);
+  }
+}
+.contact-links {
+  display: block;
+  margin: 1rem 0;
+}

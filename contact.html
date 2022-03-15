@@ -13,24 +13,25 @@
     />
     <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
     <link rel="stylesheet" href="styles/shared.css" />
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
     <script src="scripts/nav.js" defer></script>
   </head>
   <body>
     <!-- Header Component -->
-    <header>
-      <a class="logo-link" href="/index.html"
-        ><h2 class="logo">David Allen</h2></a
-      >
-
+    <header id="top">
+      <div>
+        <a class="logo-link" href="/index.html" tabindex="-1"
+          ><h2 class="logo">David Allen</h2></a
+        >
+      </div>
       <!-- Nav Component -->
       <nav class="nav-menu" id="open-close">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a class="current" href="contact.html">Contact</a></li>
+          <li><a class="current" href="index.html" tabindex="0">Home</a></li>
+          <li><a href="work.html" tabindex="0">Work</a></li>
+          <li><a href="about.html" tabindex="0">About</a></li>
+          <li><a href="blog.html" tabindex="0">Blog</a></li>
+          <li><a href="contact.html" tabindex="0">Contact</a></li>
         </ul>
       </nav>
       <div class="hamburger" id="hamburger" onclick="openClose(this)">
@@ -38,7 +39,45 @@
         <div class="bar2"></div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <h1 tabindex="0">Contact.</h1>
+
+      <section class="contact-flex">
+        <h3 tabindex="0">Get in touch via:</h3>
+        <div>
+          <div class="contact-links">
+            <p tabindex="0">LinkedIn</p>
+            <a href="https://linkedin.com/in/david-a-2a5284231" target="_blank" tabindex="0"
+              ><img
+                src="images/icons/icons8-linkedin.svg"
+                alt="LinkedIn Link"
+                title="LinkedIn"
+            /></a>
+          </div>
+          <div class="contact-links">
+            <p tabindex="0">Github</p>
+            <a href="https://github.com/dallencode" target="_blank" tabindex="0"
+              ><img
+                src="images/icons/icons8-github.svg"
+                alt="GitHub Link"
+                title="GitHub"
+            /></a>
+          </div>
+          <div class="contact-links">
+            <p tabindex="0">Email</p>
+            <a
+              href="mailto: fake@notreal.com?subject=New Enquiry for David Allen"
+              target="_blank" tabindex="0"
+              ><img
+                src="images/icons/email-svgrepo-com.svg"
+                alt="Email Link"
+                title="Email"
+            /></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <!-- Footer Component -->
     <footer>
       <div>
@@ -47,13 +86,16 @@
       <div class="socials">
         <p>Connect:</p>
 
-        <a href="https://linkedin.com/in/david-a-2a5284231" target="_blank"
+        <a
+          href="https://linkedin.com/in/david-a-2a5284231"
+          target="_blank"
+          tabindex="0"
           ><img
             src="images/icons/icons8-linkedin.svg"
             alt="LinkedIn Link"
             title="LinkedIn"
         /></a>
-        <a href="https://github.com/dallencode" target="_blank"
+        <a href="https://github.com/dallencode" target="_blank" tabindex="0"
           ><img
             src="images/icons/icons8-github.svg"
             alt="GitHub Link"
@@ -62,6 +104,7 @@
         <a
           href="mailto: fake@notreal.com?subject=New Enquiry for David Allen"
           target="_blank"
+          tabindex="0"
           ><img
             src="images/icons/email-svgrepo-com.svg"
             alt="Email Link"

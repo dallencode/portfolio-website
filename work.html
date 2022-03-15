@@ -18,17 +18,20 @@
   </head>
   <body>
     <!-- Header Component -->
-    <header>
-        <a class="logo-link" href="/index.html"
-          ><h2 class="logo">David Allen</h2></a>
+    <header id="top">
+      <div>
+        <a class="logo-link" href="/index.html" tabindex="-1"
+          ><h2 class="logo">David Allen</h2></a
+        >
+      </div>
       <!-- Nav Component -->
       <nav class="nav-menu" id="open-close">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a class="current" href="work.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a class="current" href="index.html" tabindex="0">Home</a></li>
+          <li><a href="work.html" tabindex="0">Work</a></li>
+          <li><a href="about.html" tabindex="0">About</a></li>
+          <li><a href="blog.html" tabindex="0">Blog</a></li>
+          <li><a href="contact.html" tabindex="0">Contact</a></li>
         </ul>
       </nav>
       <div class="hamburger" id="hamburger" onclick="openClose(this)">
@@ -37,23 +40,23 @@
       </div>
     </header>
     <main>
-      <h1>Recent Projects</h1>
-      <h3>
+      <h1 tabindex="0">Recent Projects</h1>
+      <h3 tabindex="0">
         See below for a list of some recent projects I've worked on.
         <span class="highlight"
-          >You can view my full CV <a href="">HERE</a></span
+          >You can view my full CV <a href="" tabindex="0">HERE</a></span
         >
       </h3>
       <!-- Projects Section -->
       <ul class="projects">
         <li class="project1">
           <div>
-            <h2>Project 1</h2>
-            <p>
+            <h2 tabindex="0">Project 1</h2>
+            <p tabindex="0">
               At the moment these are just imaginary projects, but one day you
               might come and visit again, scratch your head and think "how on
-              earth did he build that??" Perhaps that's wishful thinking, but isn't
-              that what it's all about?
+              earth did he build that??" Perhaps that's wishful thinking, but
+              isn't that what it's all about?
             </p>
           </div>
           <img
@@ -63,9 +66,10 @@
         </li>
         <li class="project2">
           <div>
-            <h2>Project 2</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. In possimus voluptas, facere, esse doloremque enim blanditiis reprehenderit veritatis totam voluptate velit, commodi perspiciatis. Dolore magnam beatae consequuntur quos ducimus sed nesciunt quisquam recusandae! Molestias minima magni voluptate corrupti delectus provident, a repellat voluptates numquam optio.
+            <h2 tabindex="0">Project 2</h2>
+            <p tabindex="0">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+              aperiam?
             </p>
           </div>
           <img
@@ -75,9 +79,10 @@
         </li>
         <li class="project3">
           <div>
-            <h2>Project 3</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet doloribus, dolorem eligendi commodi magni cumque quisquam, doloremque quia deleniti, eos voluptas aliquam consequuntur. Perferendis molestiae beatae labore atque enim aliquid dicta vitae iste, officiis magnam aperiam, harum quidem sed, impedit necessitatibus.
+            <h2 tabindex="0">Project 3</h2>
+            <p tabindex="0">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              repellendus.
             </p>
           </div>
           <img
@@ -88,20 +93,23 @@
       </ul>
     </main>
     <!-- Footer Component -->
-   <footer>
+    <footer>
       <div>
         <p>&COPY; D Allen 2022</p>
       </div>
       <div class="socials">
         <p>Connect:</p>
 
-        <a href="https://linkedin.com/in/david-a-2a5284231" target="_blank"
+        <a
+          href="https://linkedin.com/in/david-a-2a5284231"
+          target="_blank"
+          tabindex="0"
           ><img
             src="images/icons/icons8-linkedin.svg"
             alt="LinkedIn Link"
             title="LinkedIn"
         /></a>
-        <a href="https://github.com/dallencode" target="_blank"
+        <a href="https://github.com/dallencode" target="_blank" tabindex="0"
           ><img
             src="images/icons/icons8-github.svg"
             alt="GitHub Link"
@@ -110,6 +118,7 @@
         <a
           href="mailto: fake@notreal.com?subject=New Enquiry for David Allen"
           target="_blank"
+          tabindex="0"
           ><img
             src="images/icons/email-svgrepo-com.svg"
             alt="Email Link"

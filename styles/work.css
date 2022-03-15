@@ -24,8 +24,10 @@ a:visited {
 
 /* Projects Section */
 
-ul {
+.projects {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .projects li {
@@ -39,8 +41,8 @@ ul {
 }
 
 .projects img {
-  width: 50%;
-  height: auto;
+  max-height: 20rem;
+  width: auto;
   border-radius: 3px 18px 3px 18px;
   object-fit: contain;
   align-self: flex-start;
@@ -68,7 +70,7 @@ ul {
 
   .projects img {
     display: block;
-    width: 95%;
     margin: 0 auto;
+    border-radius: 3px 18px 3px 18px;
   }
 }
