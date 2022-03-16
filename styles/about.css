@@ -7,7 +7,6 @@
   margin: 2rem auto;
   border-radius: 6px;
   max-width: 70vw;
-
 }
 
 .split-flex {
@@ -42,11 +41,11 @@
   padding: 1rem;
   border-radius: 1px;
   color: var(--primary-color);
-  background: #5b5e5e;
+  background: rgb(39, 137, 222);
 }
 
 .read-blog a:hover {
-  filter: invert(1);
+  filter: invert(0.31);
 }
 
 @media screen and (max-width: 768px) {
@@ -55,8 +54,7 @@
     margin: 2rem auto;
     width: 100vw;
   }
-main {
-  text-align: center;
-}
-  
+  main {
+    text-align: center;
+  }
 }
