@@ -16,10 +16,7 @@
   --fs-xxl: clamp(8rem, 12vw + 1rem, 10rem);
 }
 
-html {
-  width: 100%;
-  height: 100vh;
-}
+/* Reset Browser Defaults */
 
 * {
   margin: 0;
@@ -27,18 +24,49 @@ html {
   box-sizing: border-box;
 }
 
+/* Global Page Layout */
+
+html {
+  width: 100%;
+  height: 100vh;
+}
+
 body {
   height: 100vh;
   font-family: var(--font-paragraph);
   background: var(--primary-color);
   color: var(--font-color);
-  /* min-width: 400px; */
 }
 
 main {
   max-width: 60rem;
   margin: 0 auto;
   animation: 1s ease-out 0s 1 fadeIn;
+}
+
+/* Global Text Styles */
+
+h1 {
+  font-family: var(--font-heading);
+  font-size: var(--fs-xl);
+}
+
+h2 {
+  font-family: var(--font-subheading);
+  font-size: var(--fs-l);
+  letter-spacing: 0.15rem;
+}
+
+h3 {
+  font-family: var(--font-heading);
+  line-height: 1.5em;
+  font-size: var(--fs-m);
+}
+
+p {
+  font-family: var(--font-paragraph);
+  line-height: 1.8em;
+  font-size: var(--fs-s);
 }
 
 /* Header Component */
@@ -72,55 +100,8 @@ header {
   transform: scale(1.02);
 }
 
-/* Global Text Styles */
 
-h1 {
-  font-family: var(--font-heading);
-  font-size: var(--fs-xl);
-}
-
-h2 {
-  font-family: var(--font-subheading);
-  font-size: var(--fs-l);
-  letter-spacing: 0.15rem;
-}
-
-h3 {
-  font-family: var(--font-heading);
-  line-height: 1.5em;
-  font-size: var(--fs-m);
-}
-
-p {
-  font-family: var(--font-paragraph);
-  line-height: 1.8em;
-  font-size: var(--fs-s);
-}
-
-/* Hamburger Icon */
-
-.hamburger {
-  display: none;
-}
-
-.bar1,
-.bar2 {
-  width: 40px;
-  height: 5px;
-  border-radius: 6px;
-  background-color: var(--font-color);
-  margin: 7px 0;
-  transition: 0.4s;
-}
-
-.change .bar1 {
-  transform: rotate(-45deg) translate(-6px, 6px);
-}
-
-.change .bar2 {
-  transform: rotate(45deg) translate(-2px, -2px);
-}
-/* Nav Component */
+/* Nav Component - Desktop & Tablet */
 .nav-menu {
   font-size: var(--fs-s);
 }
@@ -146,8 +127,32 @@ p {
   display: inline;
 }
 
+/* Hamburger Icon - Mobile Only */
+
+.hamburger {
+  display: none;
+}
+
+.bar1,
+.bar2 {
+  width: 40px;
+  height: 5px;
+  border-radius: 6px;
+  background-color: var(--font-color);
+  margin: 7px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.change .bar2 {
+  transform: rotate(45deg) translate(-2px, -2px);
+}
+
 @media screen and (max-width: 768px) {
-  /* Nav Menu Mobile */
+  /* Show Hamburger Menu */
 
   .hamburger {
     display: block;
@@ -185,7 +190,6 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* position: absolute; */
     animation-name: dissolve;
     animation-duration: 0.4s;
   }

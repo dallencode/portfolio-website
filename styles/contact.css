@@ -1,11 +1,14 @@
-body{ 
-  display:flex; 
-  flex-direction:column; 
+/* Hack to make footer on iPad work */
+body {
+  display: flex;
+  flex-direction: column;
 }
 
-footer{
-  margin-top:auto; 
+footer {
+  margin-top: auto;
 }
+/*  */
+
 
 main {
   box-sizing: content-box;
@@ -18,6 +21,8 @@ h1 {
 h3 {
   font-size: 1.5rem;
 }
+
+/* Contact Card */
 
 ul {
   list-style: none;
