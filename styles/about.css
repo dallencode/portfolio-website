@@ -45,11 +45,11 @@
   padding: 1rem;
   border-radius: 1px;
   color: var(--primary-color);
-  background: rgb(39, 137, 222);
+  background: #4391d5;
 }
 
 .read-blog a:hover {
-  filter: invert(0.31);
+  background: #1f71b8;
 }
 
 @media screen and (max-width: 768px) {
