@@ -2,7 +2,7 @@
 
 ## Site Links
 
-View the finished site [HERE](https://dallencode.netlify.app)  
+View the finished site [HERE](https://daveallendev.netlify.app)  
 View the GitHub Repository [HERE](https://github.com/dallencode/portfolio-website)
 
 ---
@@ -44,6 +44,22 @@ Some of the features of this website include:
 ![blog4-desktop](docs/blog4-desktop.png "blog4-desktop")
 ![blog5-desktop](docs/blog5-desktop.png "blog5-desktop")
 ![contact-desktop](docs/contact-desktop.png "contact-desktop")
+
+</details>
+
+<details>
+  <summary>Tablet</summary>
+
+![home-tablet](docs/home-tablet.png "home-tablet")
+![work-tablet](docs/work-tablet.png "work-tablet")
+![about-tablet](docs/about-tablet.png "about-tablet")
+![blog-tablet](docs/blog-tablet.png "blog-tablet")
+![blog1-tablet](docs/blog1-tablet.png "blog1-tablet")
+![blog2-tablet](docs/blog2-tablet.png "blog2-tablet")
+![blog3-tablet](docs/blog3-tablet.png "blog3-tablet")
+![blog4-tablet](docs/blog4-tablet.png "blog4-tablet")
+![blog5-tablet](docs/blog5-tablet.png "blog5-tablet")
+![contact-tablet](docs/contact-tablet.png "contact-tablet")
 
 </details>
 
